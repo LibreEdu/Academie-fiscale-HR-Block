@@ -1,0 +1,82 @@
+\chapter{Revenus d’emploi}
+\section{Déclarer un revenu d’emploi}
+Fédéral:
+\ca
+\begin{description}
+	\item[10100] Revenus d'emploi (T4.14)
+	\item[10120] Commissions incluses à la ligne 10100 (T4.42)\footnote{\label{inf}Informatif}
+	\item[10130] Cotisations à un régime d'assurance-salaire (cf. ligne \href{https://www.canada.ca/fr/agence-revenu/services/impot/particuliers/sujets/tout-votre-declaration-revenus/declaration-revenus/remplir-declaration-revenus/revenu-personnel/ligne-10100-revenus-emploi.html}{10100})
+	\item[10400] Autres revenus d'emploi
+	\item[13000] Autres revenus
+\end{description}
+
+Québec:
+\qc
+\begin{description}
+	\item[100] Commissions reçues (RL1.M)\textsuperscript{\,\ref{inf}}
+	\item[101] Revenus d'emploi (RL1.A)
+	\item[105] Correction des revenus d'emploi, si RL22
+	\item[107] Autres revenus d'emploi
+	\item[154] Autres revenus
+\end{description}
+\subsection{Feuillets T4 et relevés 1}
+\href{https://www.canada.ca/fr/agence-revenu/services/formulaires-publications/formulaires/t4.html}{T4} -- \href{https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/details-courant/rl-1/}{RL1}
+\subsubsection{Case 14 du T4 et case A du relevé 1}
+Le plus souvent RL1.A $\ge$ T4.14: montants imposables au QC, mais pas au fédéral.
+\subsubsection{Retenues à la source et autres montants inscrits sur les T4 et relevé 1}
+\begin{itemize}
+	\item Impôt fédéral (T4.22) et impôt Qc (RL1.E)
+	\item Cotisations Régime des rentes du Québec (T4.17, RL1.B)
+	\item Cotisations assurance emploi (T4.18, RL1.C)
+	\item Cotisations Régime québécois d’assurance parentale (T4.55, RL1.H)
+	\item Cotisations Régime de pension agréé (T4.20, RL1.D)
+	\item Cotisations syndicales (T4.44, RL1.F)
+	\item Dons de bienfaisance (T4.46, RL1.N)
+\end{itemize}
+
+Autres info obligatoires:
+\begin{itemize}
+	\item Gains assurables à l’assurance emploi (T4.24)
+	\item Salaire admissible au Régime des rentes du Québec (T4.26, RL1.G)
+	\item Salaire admissible au Régime québécois d’assurance parentale (T4.56, RL1.I)
+	\item Facteur d’équivalence (T4.52)
+\end{itemize}
+
+Gains assurables (T4) = Salaires admissibles (RL1)
+
+Avantages imposables au Québec et pas au fédéral : Régime privé d’assurance maladie (RL1.J) et Régime d’assurance interentreprises (RL1.P).
+\[ A = J + K + L + P + V + W\]
+\begin{description}
+	\item[A] Revenus d’emploi
+	\item[J] Régime privé d’assurance maladie 
+	\item[K] Voyages (région éloignée) 
+	\item[L] Autres avantages
+	\item[P] Régime d’assurance interentreprises 
+	\item[V] Nourriture et logement 
+	\item[W] Véhicule à moteur 
+\end{description}
+\section{Régime privé d'assurance-maladie payé par l'employeur}
+Les primes versées aux régimes privés d‘assurance maladie sont imposable au QC, mais pas au fédéral.
+\subsection{Régime d'assurance interentreprises}
+Régime d’assurance collective offert par plusieurs employeurs appartenant à un même secteur économique.
+\subsection{Fédéral -- Autres revenus d'emploi}
+Les primes versées par l’employeur à un régime d’assurance-vie collective
+temporaire sont imposables au fédéral. Ce montant n'est pas inclus sur le T4. T4A.119, primes payées pour une police d'assurance-vie collective temporaire, reporté T1.10400.
+\subsection{Québec -- Correction des revenus d’emploi (Ligne 105)}
+Les primes versées par l’employeur à un régime d’assurance-vie et celles versées à un régime d’assurance maladie sont imposables au QC. Montant estimé dans RL1.P et inclut dans RL1.A.
+
+L'administrateur émet un \href{https://www.revenuquebec.ca/fr/services-en-ligne/formulaires-et-publications/details-courant/rl-22/}{RL22}.
+
+RL22.A $=$ montant réel de l'avantage.
+
+RL22.B $=$ avantage relatif à l'assurance maladie
+
+RL22.A $-$ RL22.B $=$ T4A.119
+
+RL22.A $-$ RL1.P $=$ Correction des revenus d’emploi $=$ TP1.105 (grille 105)
+\section{Compensation versée à un volontaire participant à des services d'urgence}
+La première tranche de \numprint{1000}~\$ (fédéral) et \numprint{1235}~\$ (QC) de cette compensation est exonérée d’impôt. Le feuillet T4 et le relevé~1 sont émis seulement pour la partie du montant payé qui dépasse cette exemption.
+
+Partie imposable: T4.14 et RL1.A
+
+Partie non imposable: T4.87 et RL1.L2
