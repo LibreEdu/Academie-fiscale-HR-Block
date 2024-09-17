@@ -1,32 +1,41 @@
 \documentclass[12pt,french]{report}% Mise en page d’un rapport de plusieurs chapitres
-\input{Packages}
-\input{Macros}
-\input{Page-titre}
+\input{tex/package}
+\input{tex/macro}
+\input{tex/page-titre}
+\input{tex/acronyme}
 \makeindex
-\input{Acronymes}
 \begin{document}
+\graphicspath{{image/}}
 %\layout
-\input{En-tete}
 \maketitle
-\input{Compteurs}
+\input{tex/compteur}
+\input{tex/en-tete}
 \tableofcontents
-% ‘
-\input{Chapitre-0}
-\input{Chapitre-1}
-%\input{Chapitre-2}
-%\input{Chapitre-3}
-%\input{Chapitre-4}
-%\input{Chapitre-5}
-%\input{Chapitre-6}
-%\input{Chapitre-7}
-%\input{Chapitre-8}
-%\input{Chapitre-9}
-%\input{Chapitre-10}
-%\input{Chapitre-11}
-%\input{Chapitre-12}
-%\input{Chapitre-13}
-\input{ImpressionGlossaire}
-%\input{Formulaires-fed}
-%\input{Formulaires-QC}
-\input{Index}
+\input{chapitre/00}
+\input{chapitre/01}
+\input{chapitre/02}
+%\input{chapitre/03}
+%\input{chapitre/04}
+%\input{chapitre/05}
+%\input{chapitre/06}
+%\input{chapitre/07}
+%\input{chapitre/08}
+%\input{chapitre/09}
+%\input{chapitre/10}
+%\input{chapitre/11}
+%\input{chapitre/12}
+%\input{chapitre/13}
+\input{tex/glossaires}
+\input{tex/formulaire-fed}
+\input{tex/formulaire-qc}
+\input{tex/index}
 \end{document}
+
+% ‘
+% ’
+% «
+% »
+%  ?
+%  ;
+%  :
+% Aperçu - Fichier - Imprimer - PDF (gauche) - Enregistrer au format PDF
