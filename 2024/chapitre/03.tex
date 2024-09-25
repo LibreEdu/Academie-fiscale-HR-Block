@@ -1612,6 +1612,13 @@ Complétez les étapes~2 à 4 de la \href{https://www.canada.ca/fr/agence-revenu
 \begin{question}
 	À l'aide des renseignements figurant sur les feuillets d'impôt, calculez le trop-perçu au titre du RRQ, s'il y a lieu.
 \end{question}
+TP1, ligne 452 = Annexe 8, ligne 14 = 20,00
+
+Gains ouvrant droit à pension RRQ (T4 case 26) = \numprint{40000,00}
+
+Cotisations de l’employé au RRQ (T4 case 17) = \numprint{2356,00}
+
+Cotisations requises = (\numprint{40000,00} - \numprint{3500,00}) $\times$ 6,4 \% = \numprint{2336,00}
 
 \begin{question}
 	Effectuez les entrées appropriées aux lignes suivantes de la T1 et TP-1 de Donna.
@@ -1620,18 +1627,50 @@ Complétez les étapes~2 à 4 de la \href{https://www.canada.ca/fr/agence-revenu
 		\item T1: lignes 30800 et 22215
 	\end{itemize}
 \end{question}
+\begin{itemize}
+	\item TP-1
+	\begin{description}
+		\item[Ligne 98] \numprint{2356,00} (Cotisation au RRQ, relevé 1, case B )
+		\item[Ligne 98.1] \numprint{40000,00} (Salaire admissible au RRQ, relevé 1, case G)
+		\item[Ligne 452] 20,00 (Cotisation payée en trop au RRQ)
+	\end{description}
+	\item T1
+	\begin{description}
+		\item[Ligne 30800] \numprint{1971,00} (Cotisations de base RRQ, Annexe 8, (\numprint{40000,00} -  \numprint{3500,00}) $\times$ 5,4~\%)
+		\item[Ligne 22215] 365,00 (Déduction pour les cotisations bonifiées au RRQ, Annexe 8, (\numprint{40000,00} -  \numprint{3500,00}) $\times$ 1 \%)
+	\end{description}
+\end{itemize}
 
 \begin{question}
 	Calculez le paiement en trop à l'AE, le cas échéant, à l'aide de l'annexe 10.
 \end{question}
+Ligne 18 = \numprint{40000,00} (T4 case 24)
+
+Ligne 20 = 508,00 = Ligne 22
+
+Ligne 21 =  518,00 (T4 case 18)
+
+Ligne 23 = 518,00 - 508,00 = 10,00
 
 \begin{question}
 	Quelles inscriptions devez-vous faire sur les déclarations fédérale et provinciale de Donna à l'égard de ses cotisations à l'AE?
 \end{question}
+31200 - Crédit d'impôt non remboursable : 40 000 (case 24) * 1,27 \% = 508,00
+
+45000 - Paiement en trop d'AE : 10,00
+
+Rien au provincial
 
 \begin{question}
 	Calculez le paiement en trop au RQAP, le cas échéant.
 \end{question}
+Hors Québec, les prestations d'assurance parentale sont assumées par l'AE.
+
+Au Québec, elles sont assumées par le RQAP.
+
+Cotisation RQAP dû = \numprint{40000,00} (case I du RL-1) $\times$ 0,494 \% = 197,60
+
+Cotisation RQAP payée = case H = 197,60 ; pas de paiement en trop
 
 \begin{question}
 	Effectuez les entrées appropriées aux lignes suivantes de la T1 et TP-1 de Donna.
@@ -1640,7 +1679,19 @@ Complétez les étapes~2 à 4 de la \href{https://www.canada.ca/fr/agence-revenu
 		\item T1: ligne 31205
 	\end{itemize}
 \end{question}
+\begin{itemize}
+	\item TP-1
+	\begin{description}
+		\item[Ligne 97] 197,60 (Cotisation au RQAP, relevé 1, case H)
+		\item[Ligne 457] 0,00 (Cotisation payée en trop au RQAP)
+	\end{description}
+	\item T1
+	\begin{description}
+		\item[Ligne 31205] 3197,60 (Cotisations au RPAP, T4, case 55)
+	\end{description}
+\end{itemize}
 
 \begin{question}
 	Ginette n'a eu aucun revenu durant l'année. Est-ce qu'elle doit produire une déclaration de revenus? Expliquez votre réponse.
 \end{question}
+Oui, T1, crédit pour la TPS (T1), crédit d'impôt pour solidarité + transfert crédits d'impôt non remboursable (TP-1)
