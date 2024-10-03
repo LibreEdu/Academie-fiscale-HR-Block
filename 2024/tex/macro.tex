@@ -4,9 +4,9 @@
 \newcommand{\cat}{\texttwemoji{maple leaf} }
 \newcommand{\qct}{\texttwemoji{fleur-de-lis} }
 
-\newcommand{\arcg}[1]{
+\newcommand{\arcg}[2][]{
 	
-	\cat\href{https://www.canada.ca/content/dam/cra-arc/formspubs/pub/5000-g/5000-g-23f.pdf}{Renseignements sur l’impôt fédéral et les prestations}, page~#1
+	\cat\href{https://www.canada.ca/content/dam/cra-arc/formspubs/pub/5000-g/5000-g-23f.pdf}{Renseignements sur l’impôt fédéral et les prestations}, page#1~#2
 	
 }
 
@@ -19,6 +19,7 @@
 \newenvironment{intro}
 {
 	\begin{mdframed}[backgroundcolor=AntiqueWhite, linewidth=0pt]
+		\hspace*{13pt}
 }
 {
 	\end{mdframed}
