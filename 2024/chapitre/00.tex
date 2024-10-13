@@ -35,12 +35,30 @@ Exemple :
 	\item $0,015 \Rightarrow 0,02$
 \end{itemize}
 
+\marginpar{\color{BrickRed}\Large{\danger}}
+La différence des arrondis \( (\text{arrondi}(x)-\text{arrondi}(y)) \) n’est pas forcément égale à l’arrondi des différences \( (\text{arrondi}(x-y) ) \).
+
+Exemple:
+
+\noindent
+\begin{center}
+	\begin{tblr}{
+		width=0.8\linewidth,
+		colspec = {X[c]|X[c]}
+	}
+		\SetCell[c=2]{c} x = 0,010 \qquad y = 0,005       &                                        \\ \hline
+		arrondi(x) = 0,01                                 &                                        \\
+		arrondi(y) = 0,01                                 & x $-$ y = 0,005                        \\
+		arrondi(x) $-$ arrondi(y) = 0,0\textcolor{red}{0} & arrondi(x$-$y) = 0,0\textcolor{red}{1}
+	\end{tblr}
+\end{center}
+
 
 
 \section*{Notation}
 \addcontentsline{toc}{section}{Notation}
 \begin{itemize}
-	\item Devoir 1: 20~\% de la note finale
-	\item Devoir 2: 20~\% de la note finale
+	\item Devoir 1 (chapitre~6): 20~\% de la note finale
+	\item Devoir 2 (chapitre~12): 20~\% de la note finale
 	\item Examen théorique : 60~\% de la note finale
 \end{itemize}
