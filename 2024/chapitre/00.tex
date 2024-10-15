@@ -36,7 +36,7 @@ Exemple :
 \end{itemize}
 
 \marginpar{\color{BrickRed}\Large{\danger}}
-La différence des arrondis \( (\text{arrondi}(x)-\text{arrondi}(y)) \) n’est pas forcément égale à l’arrondi des différences \( (\text{arrondi}(x-y) ) \).
+La somme d'arrondis \( (\text{arrondi}(x)+\text{arrondi}(y)) \) n’est pas forcément égale à l’arrondi des sommes \( (\text{arrondi}(x+y) ) \).
 
 Exemple:
 
@@ -46,12 +46,14 @@ Exemple:
 		width=0.8\linewidth,
 		colspec = {X[c]|X[c]}
 	}
-		\SetCell[c=2]{c} x = 0,010 \qquad y = 0,005       &                                        \\ \hline
+		\SetCell[c=2]{c} x = 0,005 \qquad y = 0,005       &                                        \\ \hline
 		arrondi(x) = 0,01                                 &                                        \\
-		arrondi(y) = 0,01                                 & x $-$ y = 0,005                        \\
-		arrondi(x) $-$ arrondi(y) = 0,0\textcolor{red}{0} & arrondi(x$-$y) = 0,0\textcolor{red}{1}
+		arrondi(y) = 0,01                                 & x $+$ y = 0,01                         \\
+		arrondi(x) $+$ arrondi(y) = 0,0\textcolor{red}{2} & arrondi(x$+$y) = 0,0\textcolor{red}{1}
 	\end{tblr}
 \end{center}
+
+Ainsi, si quelqu’un a un revenu de 1~\$ et un taux d’imposition de 15~\%, il a 0,15~\$ d’impôt. S’il a un crédit de 0,10~\$, cela fait une réduction d’impôt de 0,015~\$. On s’attend donc à une réduction 0,02~\$ en appliquant la règle d’arrondi. Son nouveau revenu est de 0,90~\$. Son impôt est de 0,135~\$, ce qui fait 0,14~\$ si on l’arrondit, soit une réduction de 0,01~\$ seulement.
 
 
 
